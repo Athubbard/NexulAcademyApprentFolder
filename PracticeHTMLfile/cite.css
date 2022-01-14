@@ -1,0 +1,16 @@
+.main {
+    color: blueviolet;
+}
+
+.body {
+    background-color:chocolate;
+}
+.col {
+    margin-top: 35 !important;
+}
+.text {
+     vertical-align: middle;
+}
+h1 p {
+    margin-top: 15;
+}
