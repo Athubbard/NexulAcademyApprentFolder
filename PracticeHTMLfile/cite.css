@@ -1,16 +1,25 @@
 .main {
     color: blueviolet;
+    padding-left: 1rem;
+}
+p {
+    padding-left: 1rem;
 }
 
 .body {
     background-color:chocolate;
-}
-.col {
-    margin-top: 35 !important;
+    padding-left: 1rem;
+    opacity: 3.5;
+    
 }
 .text {
-     vertical-align: middle;
+    margin-top: 105 !important;
+    }
+.col {
+    margin-top: 35;
+    text-align: center;
 }
-h1 p {
-    margin-top: 15;
+
+img {
+    border-radius: rounded-3;
 }
