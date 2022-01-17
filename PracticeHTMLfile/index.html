@@ -7,11 +7,14 @@
 
     <title>My First HTML Page</title>
     <link href="cite.css" rel="stylesheet">
+   
 </head>
 
 <body>
+    
 
     <h1 class="main">My Practice Page for HTML</h1>
+    
     <p>
         This is practice so that I am able to better understand HTML and how it works. I will practice using elements to
         set up my index page.
@@ -42,8 +45,69 @@
             </div>
         </div>
 
+        <div class="main">
+            <div id="editDeveloper">
+                <form>
+                    <label>
+                        Enter Email:
+                        <input id ="emailAddress" name="emailAddress" />
+                    </label>
+                    <button id="addemail">Add Me!</button>
+                </form>
+
+                <label>
+                    Name
+                    <input id ="firstName" name="firstName" />
+                    <input id ="lastName" name="lastName" />
+                </label>
+               
+            </form>
+            </div>
+            <div id="viewDeveloper" style="border: 1px solid gray; padding: 1rem;">
+                <h2 id="developerName">...</h2>
+                <ul id="developerLanguages">
+                    <li>C#</li>
+                </ul>
+            </div>
+        </div>
+    
 
     </div>
+    <div class="footer">
+        <p>
+            this is a footer
+        </p>
+    </div>
+    <script>
+        var developer = {
+            firstName: 'Amber',
+            lastName: 'Hubbard',
+            languages: ['C#',
+                'JavaScript'
+            ],  
+            emailAddress: 'amber@myemail.com'
+        };
+        function displayDeveloper(developer) {
+            var emailAddressElem = document.getElementById('emailAddress');
+            var firstNameElem = document.getElementById('firstName');
+            var lastNameElem = document.getElementById('lastName');
+            var developerNameElem = document.getElementById('developerName');
+            var languagesList = document.getElementById('developerLanguages');
+
+            emailAddressElem.value = developer.emailAddress;
+            firstNameElem.value = developer.firstName;
+            lastNameElem.value = developer.lastName;
+            developerNameElem.innerText = `${developer.firstName} ${developer.lastName}`;
+            languagesList.innerHTML = '';
+            developer.languages.forEach(lang => {
+                var node = document.createElement('li');
+                node.appendChild(document.createTextNode(lang));
+                languagesList.appendChild(node);
+            });
+        }
+        displayDeveloper(developer);
+
+    </script>
 </body>
 
 </html>
