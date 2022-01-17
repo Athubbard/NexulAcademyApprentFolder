@@ -69,6 +69,11 @@
                     <li>C#</li>
                 </ul>
             </div>
+            <label>
+                Add Skill:
+                <input id="skill" name="skill" />
+            </label>
+            <button onclick="addSkill()">Add</button>
         </div>
     
 
@@ -104,7 +109,19 @@
                 node.appendChild(document.createTextNode(lang));
                 languagesList.appendChild(node);
             });
+
         }
+
+        function addSkill() {
+                var skillInput = document.getElementById('skill');
+
+                if (skillInput.value == ' ') {return;}
+
+                developer.languages.push(skillInput.value);
+                displayDeveloper(developer);
+                
+            }
+
         displayDeveloper(developer);
 
     </script>
