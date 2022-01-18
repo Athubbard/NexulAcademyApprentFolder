@@ -40,12 +40,14 @@
                         technology industry since I was first introduced to it in 2018. I continue to practice with the hopes of
                         being a great developer. Check out some of my work on my <a href="https://github.com/Athubbard">Github</a>.
                     </p>
+
+                    <p>Also feel free to submit your contact information and we can collaborate!</p>
                 </div>
 
             </div>
         </div>
 
-        <div class="main">
+        <div class="secondary">
             <div id="editDeveloper">
                 <form>
                     <label>
@@ -54,12 +56,14 @@
                     </label>
                     <button id="addemail">Add Me!</button>
                 </form>
+            <form>
 
                 <label>
                     Name
                     <input id ="firstName" name="firstName" />
                     <input id ="lastName" name="lastName" />
                 </label>
+                <button onclick="saveDeveloper();event.preventDefault();">Save</button>
                
             </form>
             </div>
@@ -69,11 +73,19 @@
                     <li>C#</li>
                 </ul>
             </div>
-            <label>
-                Add Skill:
-                <input id="skill" name="skill" />
-            </label>
-            <button onclick="addSkill()">Add</button>
+            <div>
+                <form>
+                    <label>
+                        Add Skill:
+                        <input id="skill" name="skill" />
+                    </label>
+                    <button onclick="addSkill()">Add</button>
+                </form>
+            </div>
+        </div>
+        
+        <div>
+            <a href="#" onclick="toggleEdit()">edit</a>
         </div>
     
 
@@ -83,47 +95,8 @@
             this is a footer
         </p>
     </div>
-    <script>
-        var developer = {
-            firstName: 'Amber',
-            lastName: 'Hubbard',
-            languages: ['C#',
-                'JavaScript'
-            ],  
-            emailAddress: 'amber@myemail.com'
-        };
-        function displayDeveloper(developer) {
-            var emailAddressElem = document.getElementById('emailAddress');
-            var firstNameElem = document.getElementById('firstName');
-            var lastNameElem = document.getElementById('lastName');
-            var developerNameElem = document.getElementById('developerName');
-            var languagesList = document.getElementById('developerLanguages');
-
-            emailAddressElem.value = developer.emailAddress;
-            firstNameElem.value = developer.firstName;
-            lastNameElem.value = developer.lastName;
-            developerNameElem.innerText = `${developer.firstName} ${developer.lastName}`;
-            languagesList.innerHTML = '';
-            developer.languages.forEach(lang => {
-                var node = document.createElement('li');
-                node.appendChild(document.createTextNode(lang));
-                languagesList.appendChild(node);
-            });
-
-        }
-
-        function addSkill() {
-                var skillInput = document.getElementById('skill');
-
-                if (skillInput.value == ' ') {return;}
-
-                developer.languages.push(skillInput.value);
-                displayDeveloper(developer);
-                
-            }
-
-        displayDeveloper(developer);
-
+    <script src="index.js">
+        
     </script>
 </body>
 
