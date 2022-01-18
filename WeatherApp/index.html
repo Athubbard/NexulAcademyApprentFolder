@@ -1,33 +1,42 @@
 <html>
     <body>
         <p>
-            Current temperature is <span id="temperature"> </span>
+            Current temperature is <span id="temperature"> </span> &#8457;
             with a humidity of <span id="humidity"> </span>%
         </p>
         <p>
             Current Windspeed is <span id="speed"> </span>
         </p>
+        <input type ="text" id="zipcode" name="zipcode" value="63116"/>
+        <button onclick="loadWeather()">Enter</button>
 
         <script>
-            var weather = {
-                "wind": {
-                    "speed": 0.47,
-                    "deg": 107.538
-                },
-                "main": {
-                    "temp": 98,
-                    "humidity": 93
-                }
-            }
             
-            var tempElem = document.getElementById('temperature');
+            function displayWeather(weather) {
+                var tempElem = document.getElementById('temperature');
             tempElem.innerText = weather.main.temp;
 
-            var humidElem = document.getElementById('humidity');
+                var humidElem = document.getElementById('humidity');
             humidElem.innerText = weather.main.humidity;
 
-            var windElem = document.getElementById('speed');
+                var windElem = document.getElementById('speed');
             windElem.innerText = weather.wind.speed;
+
+            }
+
+            function loadWeather() {
+                var zipcodeInput = document.getElementById('zipcode');
+                
+                if (zipcodeInput.value == '') {return;}
+
+                
+                fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcodeInput.value},US&units=imperial&appid=d480fc3689a99c12ed9ffbcba4ed6542`)
+                    .then(response => response.json())
+                    .then(data => displayWeather(data));
+            }
+
+            loadWeather();
+
 
         </script>
 
