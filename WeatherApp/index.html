@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <p>
+            Current temperature is <span id="temperature"> </span>
+            with a humidity of <span id="humidity"> </span>%
+        </p>
+        <p>
+            Current Windspeed is <span id="speed"> </span>
+        </p>
+
+        <script>
+            var weather = {
+                "wind": {
+                    "speed": 0.47,
+                    "deg": 107.538
+                },
+                "main": {
+                    "temp": 98,
+                    "humidity": 93
+                }
+            }
+            
+            var tempElem = document.getElementById('temperature');
+            tempElem.innerText = weather.main.temp;
+
+            var humidElem = document.getElementById('humidity');
+            humidElem.innerText = weather.main.humidity;
+
+            var windElem = document.getElementById('speed');
+            windElem.innerText = weather.wind.speed;
+
+        </script>
+
+
+    </body>
+</html>
