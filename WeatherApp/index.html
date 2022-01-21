@@ -7,23 +7,34 @@
     </head>
 
     <body>
-        <h1>
-            What's the Temp?
-        </h1>
-        <p>
-            Enjoy this free weather App that allows you the see "whats the temp?" nationwide!
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1>
+                        What's the Temp?
+                    </h1>
+                    <p>
+                        Enjoy this free weather App that allows you the see "whats the temp?" nationwide!
+                    </p>
+                    <!--<div class="bg-gradient"> -->
+                        <input type ="text" id="zipcode" name="zipcode" value="63116"/>
+                        <button type="button" class="btn btn-secondary btn-sm" onclick="loadWeather()">Enter</button>
+                        
+            
+                        <p>
+                   
+                            Current temperature is <span id="temperature"> </span> &#8457;
+                            with a humidity of <span id="humidity"> </span>%
+                        </p>
+                        <p>
+                            Current Windspeed is <span id="speed"> </span>
+                        </p>
+                </div>
+                
+                    
+            </div>
+            <!-- <img src="backgroundSUN.jpg" class="img-fluid" alt="sun image"> -->
         
-        <div class="bg-gradient">
-
-            <p>
-                Current temperature is <span id="temperature"> </span> &#8457;
-                with a humidity of <span id="humidity"> </span>%
-            </p>
-            <p>
-                Current Windspeed is <span id="speed"> </span>
-            </p>
-            <input type ="text" id="zipcode" name="zipcode" value="63116"/>
-            <button onclick="loadWeather()">Enter</button>
+        
 
             <script>
             
@@ -54,7 +65,7 @@
 
 
             </script>
-        </div>
+        
 
     </body>
 </html>
