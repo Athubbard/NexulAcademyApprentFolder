@@ -20,33 +20,15 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-family: Rancho;
+    font-size: xx-large;
 }
 
 
 
 
-/* div.hero {
-    background-image: url('backgroundSUN.jpg');
-    height: 400px;
-    background-repeat: round;
-    opacity: 0.5;
-    
+.col {
+    margin-top: 100;
 }
-div.hero .overlay {
-   
-    opacity: ;
-}
-
-.img-fluid {
-    width: 110%;
-    height: 50%;
-    margin-left: -12;
-}
-
-p, h1, input {
-    margin-left: 1rem;
-    font-family:cursive;
-    
-} */
 
 
