@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
-    background-color: rgba(242, 251, 255, 0.8);
+    background-image: linear-gradient(to bottom right,rgba(207, 184, 151), rgba(207,0,0,0)); */
+   
 }
 
 .hero-image {
@@ -20,8 +21,8 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: Rancho;
-    font-size: xx-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
 }
 
 
@@ -29,6 +30,19 @@ body, html {
 
 .col {
     margin-top: 100;
+    margin-left:auto;
+    margin-right: auto; 
+   
 }
 
+.clouds {
+    background-color: rgba(255, 240, 219, 0.8)!important;
+}
 
+.clear {
+    background-color: rgba(255, 159, 25, 0.8)!important;
+}
+
+.snow {
+    background-color: whitesmoke !important;
+} 
