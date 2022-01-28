@@ -1,4 +1,4 @@
-<script>
+
             
                 function displayWeather(weather) {
                     var tempElem = document.getElementById('temperature');
@@ -54,4 +54,4 @@
                 loadWeatherCity('Los Angeles',document.getElementById('LosAngeles'));
                 loadWeatherCity('New York',document.getElementById('NewYork'));
 
-            </script>
+         

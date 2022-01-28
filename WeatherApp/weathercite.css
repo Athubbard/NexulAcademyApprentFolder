@@ -1,12 +1,12 @@
 body, html {
-    height: 100%;
-    background-image: linear-gradient(to bottom right,rgba(207, 184, 151), rgba(207,0,0,0)); */
+    height: 800px;
+    background-image: linear-gradient(to bottom right,rgba(207, 184, 151), rgba(207,0,0,0)); 
    
 }
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("backgroundSUN.jpg");
-    height: 50%;
+    height: 400px;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -26,13 +26,12 @@ body, html {
 }
 
 
-
+.strictHeight {
+    height: 300px;
+}
 
 .col {
     margin-top: 100;
-    margin-left:auto;
-    margin-right: auto; 
-   
 }
 
 .clouds {
@@ -40,9 +39,13 @@ body, html {
 }
 
 .clear {
-    background-color: rgba(255, 159, 25, 0.8)!important;
+    background-color: rgba(199, 245, 255, 0.8) !important;
+
 }
 
 .snow {
     background-color: whitesmoke !important;
 } 
+.mist {
+    background-color: rgba(211, 218, 219, 0.8)!important
+}
