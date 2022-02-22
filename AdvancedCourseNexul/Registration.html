@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="registrationstyle.css">
+    </head>
+</html>
+
+<div>
+    
+    
+    <form action="/customer/update" method="POST">
+        <label for="name">First Name</label><br>
+        <input id="firstName" type="text" minlength="2" maxlength="25" placeholder="Enter name" required><br>
+        <label for="lastName">Last Name </label><br>
+        <input id="lastName" type="text" minlength="2" maxlength="25" placeholder="Enter name" required><br>
+        <label for="userName">Create Username</label><br>
+        <input id="userName" type="text" minlength="2" maxlength="25" name="userName" placeholder="Username" required><br>
+        <label for="email">Enter email</label><br>
+        <input id="email" type="email" minlength="2" maxlength="15" placeholder="example@email.com" required><br>
+        <label for="password">Create Password</label><br>
+        <input id="password" type="password" minlength="2" maxlength="25" required><br>
+        <input type="submit" value="Save"><br>
+    </form><br>
+    <div>
+        <textarea name="textarea" placeholder="Tell us about yourself!"></textarea><br>
+        <label for="checkbox">Do you have coding experience?</label><br>
+        <input id="checkbox" type="checkbox" name="" value="true">yes<br>
+        <input id="checkbox" type="checkbox" name="" value="true">no<br>
+        <label for="radio">Gender:</label><br>
+        <input id="radio" type="radio" name="gender" value="male">male<br>
+        <input id="radio" type="radio" name="gender" value="female">female<br>
+    </div>
+    <div>
+        <label for="languages"> Which Languages would you like to learn?</label>
+        <select name="language">
+            <option value="html">Html</option>
+            <option value="css" selected>CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="c#">C#</option>
+          </select>
+    </div>
+</div>

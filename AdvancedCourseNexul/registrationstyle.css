@@ -1,0 +1,14 @@
+input, label {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+div {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}
+textarea {
+    margin-bottom: 1rem;
+}
