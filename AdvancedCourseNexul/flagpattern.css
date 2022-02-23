@@ -1,0 +1,32 @@
+html {
+    background-color:beige;
+    
+}
+
+tr:nth-child(odd) {
+    background: red;
+    color:transparent;
+}
+tr:nth-child(even) {
+    background: white;
+    color:transparent;
+}
+tr:nth-last-of-type(n+7) td:nth-last-of-type(n+9) {
+    background: blue;
+    color:transparent;
+    font-size: 0;
+}
+
+tr:nth-last-of-type(n+7) td:nth-last-of-type(n+9):after {
+    content: '\2605';
+    font-size: 15px;
+    color: white;
+    
+    
+}
+
+tr:nth-last-of-type(odd) td:after {
+    position: relative;
+    left: 11px;
+    
+}
