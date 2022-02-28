@@ -5,7 +5,7 @@
 }
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 130px;
+    width: 165px;
     background-color: antiquewhite;
     color:blue;
     text-align: center;
@@ -17,3 +17,42 @@
 .tooltip:hover .tooltiptext{
     visibility: visible;
 }
+.google:before {
+    content: 'Google';
+}
+
+ @media print { */
+    a[href]:after {
+      content: " (" attr(href) ") ";
+    }
+   } 
+
+   body {
+       counter-reset: counterSect;
+   }
+
+   p::before {
+       counter-increment: counterSect;
+       content: counter(counterSect)'. ';
+   }
+
+   #earth {
+       width: 100px;
+       height: 100px;
+       background:blue;
+       border-radius: 50%;
+       position: relative;
+       border: 3px;
+   }
+
+   #land{
+    width: 50px;
+    height: 50px;
+    transform: skew(20deg);
+    background: green;
+    border-radius: 22px 10px 9px 55px;
+    position: absolute;
+    top: 142px;
+    left: 40px;
+    border: 3px;
+  }
