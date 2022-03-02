@@ -1,7 +1,13 @@
 .square {
+
 border: 5px dashed red;
 border-radius: 20px;
 height: 80px;
 width: 140px;
+margin: auto;
+margin-top: 250px;
+transform: rotate(40deg) scale(3, 5);
+
+
 
 }
