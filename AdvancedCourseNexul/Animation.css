@@ -1,0 +1,31 @@
+.wink-emoji:hover {
+    content: "😉";
+    position: relative;
+    font-size: 100px;
+    display: block;
+    height: 120px;
+    width: 120px;
+    left: 0;
+    margin: 0;
+    line-height: 140px;
+    font-size: 140px;
+    animation-name: helloGoodbye;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
+  @keyframes helloGoodbye {
+    0% {
+      left: 0px; top: 0px;
+    }
+    25% {
+      left: 45px; top: 0px;
+    }
+    50% {
+      left: 55px; top: 100px;
+    }
+    100% {
+      left: 100px; top: 100px;
+    }
+}
