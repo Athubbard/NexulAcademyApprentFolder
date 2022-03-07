@@ -1,18 +1,22 @@
 
 Use SimpleOrder;
 
-drop table IF EXISTS Customer;
+
+drop table IF EXISTS OrderItem;
+drop table IF EXISTS [Order];
+drop table IF EXISTS Customer;  
+drop table IF EXISTS Product;
 
 create table Customer (
 CustomerId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-FirstName char(20) NOT NULL, 
-LastName char(20) NOT NULL,
+FirstName varchar(20) NOT NULL, 
+LastName varchar(20) NOT NULL,
 BirthDate date NOT NULL,
-Email varchar NOT NULL
+Email varchar(20) NOT NULL
 
 );
 
-drop table IF EXISTS [Order];
+
 
 Create table [Order] (
 [OrderId] int  IDENTITY(1,1) PRIMARY KEY NOT NULL,
