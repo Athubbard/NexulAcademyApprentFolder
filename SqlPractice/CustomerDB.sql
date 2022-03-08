@@ -30,7 +30,7 @@ OrderStatus varchar(20) DEFAULT ('placed') NOT NULL
 
 create table Product (
 ProductId int IDENTITY(1,1) PRIMARY KEY NOT NULL,
-ProductName char NOT NULL,
+ProductName varchar(20) NOT NULL,
 ProductPrice decimal NOT NULL,
 );
 

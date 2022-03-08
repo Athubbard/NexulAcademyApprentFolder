@@ -21,3 +21,7 @@ Insert Into [Order]
 
 Values
 (1,'3-7-2019', $33.50, 2, 'placed');
+
+Update [Order]
+Set OrderStatus = 'delivered'
+	Where OrderId= 1;
