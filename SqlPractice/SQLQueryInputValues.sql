@@ -25,3 +25,6 @@ Values
 Update [Order]
 Set OrderStatus = 'delivered'
 	Where OrderId= 1;
+
+Delete Customer
+	Where CustomerId = 5;
