@@ -22,9 +22,22 @@ Insert Into [Order]
 Values
 (1,'3-7-2019', $33.50, 2, 'placed');
 
+Use SimpleOrder;
+
 Update [Order]
 Set OrderStatus = 'delivered'
 	Where OrderId= 1;
 
+Update Customer
+ SET FirstName = 'Dave',
+	 BirthDate = DATEADD(year, -25, GETDATE())
+	WHERE CustomerId = 4;
+
+Update Customer 
+	SET FirstName = 'Snoop',
+		 LastName = 'Deville',
+		 BirthDate = DATEADD(year, -50, GETDATE())
+		WHERE CustomerId = 6;
+
 Delete Customer
-	Where CustomerId = 5;
+	WHERE CustomerId = 5;
